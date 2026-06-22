@@ -10,6 +10,7 @@ Write simple, compact, maintainable code.
 * Structure files by responsibility.
 * Do not create mega-files. Keep files around 150–200 lines unless there is a good reason for a larger file, eg. UI code.
 * Keep related logic together, but split files when a file starts mixing unrelated responsibilities.
+* When breaking up large files use folders or submodules to organize related code.
 
 * Prefer boring code that is easy to read, change, and delete.
 * Keep code terse. Prefer fewer moving parts and less code when it remains clear.
@@ -23,3 +24,7 @@ Write simple, compact, maintainable code.
 
 * Solve the actual problem.
 * Avoid unnecessary robustness, configurability, abstractions, defensive layers, and “future-proofing.”
+
+* When refactoring code. don't be afraid to boil the ocean and make large changes.
+* Create an architecture plan and double check with the human that the proposal is a good fit for the codebase. 
+* If your harness allows, use sub-agents to fan out and parallelize work.
